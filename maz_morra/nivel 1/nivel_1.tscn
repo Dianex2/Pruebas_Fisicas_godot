@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://bh4s0x06w6vnt"]
 
-[ext_resource type="PackedScene" uid="uid://bt56qewmjd6vj" path="res://esenas/Bordes/bordes.tscn" id="1_rtb34"]
+[ext_resource type="PackedScene" uid="uid://bt56qewmjd6vj" path="res://escena/Bordes/bordes.tscn" id="1_rtb34"]
 [ext_resource type="TileSet" uid="uid://b6m8dqsmbkw3h" path="res://maz_morra/maz_morra.tres" id="2_ttn70"]
 [ext_resource type="PackedScene" uid="uid://b64432xsvy0jg" path="res://maz_morra/nivel 1/personaje/personaje/personaje/character_body_2d.tscn" id="3_vp6fd"]
 

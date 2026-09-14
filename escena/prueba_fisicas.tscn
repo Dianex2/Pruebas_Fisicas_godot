@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dd45jckubosur"]
+
+[ext_resource type="PackedScene" uid="uid://bh4s0x06w6vnt" path="res://maz_morra/nivel 1/nivel_1.tscn" id="1_sfjhd"]
+
+[node name="PruebaFisicas" type="Node" unique_id=1197702556]
+
+[node name="Nivel 1" parent="." unique_id=1614944099 instance=ExtResource("1_sfjhd")]
+position = Vector2(518, 280)
