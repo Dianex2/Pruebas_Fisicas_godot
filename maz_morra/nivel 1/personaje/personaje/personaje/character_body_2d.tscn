@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://b64432xsvy0jg"]
+
+[ext_resource type="SpriteFrames" uid="uid://cle6jl25bue76" path="res://maz_morra/nivel 1/personaje/personaje/personaje/sprite_ sprite_frames_personajes.tres" id="1_oqx6c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vmu4i"]
+size = Vector2(17, 16)
+
+[node name="personaje" type="CharacterBody2D" unique_id=275138364]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1974324576]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_vmu4i")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=680104408]
+position = Vector2(-0.5, 0)
+scale = Vector2(1.0625, 1)
+sprite_frames = ExtResource("1_oqx6c")
+animation = &"run"
+frame = 4
+frame_progress = 0.4111661

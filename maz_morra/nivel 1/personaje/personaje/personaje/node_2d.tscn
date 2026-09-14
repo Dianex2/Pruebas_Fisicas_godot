@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cn6et1yvalyrh"]
+
+[ext_resource type="PackedScene" uid="uid://bh4s0x06w6vnt" path="res://maz_morra/nivel 1/nivel_1.tscn" id="1_60uwb"]
+
+[node name="Node2D" type="Node2D" unique_id=1443412764]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1794705486]
+position = Vector2(-1, -1)
+offset = Vector2(1.5, 0)
+zoom = Vector2(1.26, 1.26)
+
+[node name="Nivel 1" parent="." unique_id=1614944099 instance=ExtResource("1_60uwb")]
+visibility_layer = 3
+position = Vector2(-2, -1)
