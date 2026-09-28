@@ -1,0 +1,51 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1789360530
+icon.svg::CompressedTexture2D::4216112701169564476::1788627982::1788627988::1::::<><><>0<>0<>3458e074557f6917680ab24293de0110<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+Diana_jolet _coto_chapol-05_09_2026.txt::TextFile::-1::1789085576::0::1::::<><><>0<>0<><>::
+::res://assets/::1789360436
+::res://assets/musica/::1789360436
+musica.wav::AudioStreamWAV::6086664848865898542::1788627152::1788632280::1::::<><><>0<>0<>19c862fd786c24b77a6a658ec92dd0d1<>res://.godot/imported/musica.wav-21345f66a9cd4aea1016544a0b11313f.sample::
+::res://assets/sonidos/::1789360436
+sonido_moneda.wav::AudioStreamWAV::6792469516706585032::1788627152::1788632280::1::::<><><>0<>0<>3422e57e2e9a8d133d8ff94fd7ff0855<>res://.godot/imported/sonido_moneda.wav-7a1caaf22f62414c1898cc5efc7f726a.sample::
+::res://assets/sprites/::1789360436
+mago_spritesheet.png::CompressedTexture2D::7741442412082028401::1788627152::1788632280::1::::<><><>0<>0<>c5a3155a247e02bcac858dd29bc921e1<>res://.godot/imported/mago_spritesheet.png-ec52957f6dc5a58769efbe85ad088002.ctex::
+tileset_mazmorra.png::CompressedTexture2D::2102438193168101304::1788627152::1788632280::1::::<><><>0<>0<>70bf9168fc83f456605845f2d81d5f1b<>res://.godot/imported/tileset_mazmorra.png-0ec6599827d386b9d12465eac45c657b.ctex::
+::res://ecenas/::1789360436
+::res://ecenas/bordes/::1789360436
+bordes.tscn::PackedScene::1067339469549496722::1789234882::0::1::::<><><>0<>0<><>::uid://yqbe5krk7f4h::::res://tileset/mazmorra.tres
+::res://ecenas/ecena-principal/::1789360436
+ecena_principal.tscn::PackedScene::7973702265182301774::1789238974::0::1::::<><><>0<>0<><>::uid://csc322ww75008::::res://ecenas/nivel-1/nivel_1.tscn
+::res://ecenas/nivel-1/::1789360436
+nivel_1.tscn::PackedScene::6042119053771499783::1789239388::0::1::::<><><>0<>0<><>::uid://pha6ppbqkk3c::::res://ecenas/bordes/bordes.tscn<>uid://yqbe5krk7f4h::::res://tileset/mazmorra.tres<>uid://6jvrreu22l6m::::res://ecenas/personaje/personaje.tscn<>uid://d04jwaf1xsash::::res://ecenas/personaje/personaje.gd
+::res://ecenas/personaje/::1789360436
+personaje.gd::GDScript::8974435846235439083::1789239348::0::1::::<>CharacterBody2D<><>0<>0<><>::
+personaje.tscn::PackedScene::2195739867932055518::1789238240::0::1::::<><><>0<>0<><>::uid://dtbxunpaypnot::::res://ecenas/personaje/sprite_frames_personaje.tres
+sprite_frames_personaje.tres::SpriteFrames::8496347370676000091::1789238240::0::1::::<><><>0<>0<><>::uid://dikaop4nchj18::::res://assets/sprites/mago_spritesheet.png
+::res://ecenas/prueba-fisicas/::1789360436
+prueba_fisicas.tscn::PackedScene::4734069610999573161::1788631732::0::1::::<><><>0<>0<><>::uid://b1ck032fkd3ye::::res://icon.svg
+::res://esenas/::1789359034
+prueba_fisicas.tscn::PackedScene::7431533240194632833::1789359034::0::1::::<><><>0<>0<><>::uid://bh4s0x06w6vnt::::res://maz_morra/nivel 1/nivel_1.tscn
+::res://esenas/Bordes/::1789355927
+bordes.tscn::PackedScene::3783851089552252663::1789355926::0::1::::<><><>0<>0<><>::uid://b6m8dqsmbkw3h::::res://maz_morra/maz_morra.tres
+::res://esenas/Esena_principal/::1789360206
+prueba_fisicas.tscn::PackedScene::4640976555989622514::1789360206::0::1::::<><><>0<>0<><>::uid://b7mxtcc24swov::::res://icon.svg
+::res://maz_morra/::1789352284
+maz_morra.tres::TileSet::4589057256390892919::1789352284::0::1::::<><><>0<>0<><>::uid://47o35pl1b7ou::::res://sprites/tileset_mazmorra.png
+::res://maz_morra/nivel 1/::1789355932
+nivel_1.tscn::PackedScene::2938748342840784409::1789355932::0::1::::<><><>0<>0<><>::uid://bt56qewmjd6vj::::res://esenas/Bordes/bordes.tscn<>uid://b6m8dqsmbkw3h::::res://maz_morra/maz_morra.tres<>uid://b64432xsvy0jg::::res://maz_morra/nivel 1/personaje/personaje/personaje/character_body_2d.tscn<>uid://bjiot8gnvo23k::::res://maz_morra/nivel 1/personaje/personaje/personaje/character_body_2d.gd
+::res://maz_morra/nivel 1/personaje/::1789237304
+::res://maz_morra/nivel 1/personaje/personaje/::1789237324
+::res://maz_morra/nivel 1/personaje/personaje/personaje/::1789359174
+character_body_2d.gd::GDScript::3035521009609481486::1789239368::0::1::::<>CharacterBody2D<><>0<>0<><>::
+character_body_2d.tscn::PackedScene::4623954040867231660::1789358769::0::1::::<><><>0<>0<><>::uid://cle6jl25bue76::::res://maz_morra/nivel 1/personaje/personaje/personaje/sprite_ sprite_frames_personajes.tres
+node_2d.tscn::PackedScene::5749570246748749345::1789359174::0::1::::<><><>0<>0<><>::uid://bh4s0x06w6vnt::::res://maz_morra/nivel 1/nivel_1.tscn
+sprite_ sprite_frames_personajes.tres::SpriteFrames::5555075078173463583::1789351195::0::1::::<><><>0<>0<><>::uid://dikaop4nchj18::::res://sprites/mago_spritesheet.png
+::res://musica/::1788632376
+musica.wav::AudioStreamWAV::6086664848865898542::1788632295::1788632376::1::::<><><>0<>0<>6fa8446df91927a22693af5274de64c1<>res://.godot/imported/musica.wav-1272e54906429fa145d9d27195220d30.sample::
+::res://sonidos/::1788632376
+sonido_moneda.wav::AudioStreamWAV::6792469516706585032::1788632295::1788632376::1::::<><><>0<>0<>10dc93cd97a14418935c32a71d4a2c07<>res://.godot/imported/sonido_moneda.wav-eae974597beae20681741765866c8b71.sample::
+::res://sprites/::1788632375
+mago_spritesheet.png::CompressedTexture2D::7741442412082028401::1788632295::1788632375::1::::<><><>0<>0<>70d759eeffaf0c6ed8b8c61959cd796c<>res://.godot/imported/mago_spritesheet.png-d763f4a6a07b61488452c0850218f8b4.ctex::
+tileset_mazmorra.png::CompressedTexture2D::2102438193168101304::1788632295::1788632375::1::::<><><>0<>0<>0989e5e10f07ccc7dc8f04b2dd1c5191<>res://.godot/imported/tileset_mazmorra.png-995e5bfa4cad9f0eb88f2627b42749f5.ctex::
+::res://tileset/::1789360436
+mazmorra.tres::TileSet::1717631743481698229::1789236616::0::1::::<><><>0<>0<><>::uid://47o35pl1b7ou::::res://assets/sprites/tileset_mazmorra.png

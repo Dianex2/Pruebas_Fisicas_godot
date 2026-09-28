@@ -1,0 +1,9 @@
+res://ecenas/nivel-1/nivel_1.tscn
+res://tileset/mazmorra.tres
+res://ecenas/personaje/sprite_frames_personaje.tres
+res://maz_morra/nivel 1/nivel_1.tscn
+res://maz_morra/maz_morra.tres
+res://maz_morra/nivel 1/personaje/personaje/personaje/sprite_ sprite_frames_personajes.tres
+res://esenas/prueba_fisicas.tscn
+res://esenas/Bordes/bordes.tscn
+res://ecenas/ecena-principal/ecena_principal.tscn
