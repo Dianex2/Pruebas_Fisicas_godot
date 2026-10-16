@@ -1,0 +1,113 @@
+[gd_scene format=4 uid="uid://prqmuw1eyljc"]
+
+[ext_resource type="Script" uid="uid://qe0eyfshkgy6" path="res://escenas/Nivel-3/nivel_3.gd" id="1_wwsqp"]
+[ext_resource type="PackedScene" uid="uid://pha6ppbqkk3c" path="res://escenas/bordes/bordes.tscn" id="1_x0u1t"]
+[ext_resource type="TileSet" uid="uid://yqbe5krk7f4h" path="res://tileset/mazmorra.tres" id="2_t4go4"]
+[ext_resource type="Texture2D" uid="uid://47o35pl1b7ou" path="res://sprites/tileset_mazmorra.png" id="3_whgyc"]
+[ext_resource type="PackedScene" uid="uid://cmaefb06vslg7" path="res://escenas/contenedor_monedas/contenedor_monedas.tscn" id="4_0gweo"]
+[ext_resource type="PackedScene" uid="uid://dqs6m5mda0h1q" path="res://escenas/moneda/moneda.tscn" id="5_wwsqp"]
+[ext_resource type="PackedScene" uid="uid://6jvrreu22l6m" path="res://escenas/personaje/personaje.tscn" id="6_aamar"]
+[ext_resource type="AudioStream" uid="uid://b8m6u2qqonyh1" path="res://sonidos/applehillstudios-comical-character-ouch-1-543564.wav" id="7_0gweo"]
+[ext_resource type="Script" uid="uid://c4fykxt5g7d3" path="res://escenas/Nivel-3/salida_nivel.gd" id="7_t4go4"]
+[ext_resource type="AudioStream" uid="uid://csyoql15iygaw" path="res://musica/musica.wav" id="8_whgyc"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5bqcy"]
+texture = ExtResource("3_whgyc")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -0.11187363, 8, -0.055936813, 8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -1.4798775, -8, -1.4798775)
+3:0/0 = 0
+3:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(6.93618, -8, 3.9155846, -2.01373, -0.05593872, -8, -4.083397, -2.01373, -6.992117, -8)
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -0.0990963, 8, -0.0990963, 8, 8, -8, 8)
+3:1/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, 0.094724655, -4.1678925, -6.030813, -4.1952705, -5.9852524, 0.063150406, -0.031574726, 3.8596497, -6.432748, 8, 0.055936813)
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_d14xj"]
+physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 0
+physics_layer_1/collision_layer = 2
+physics_layer_1/collision_mask = 0
+sources/0 = SubResource("TileSetAtlasSource_5bqcy")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cxo6d"]
+size = Vector2(21, 21)
+
+[node name="Nivel3" type="Node2D" unique_id=1408723838]
+script = ExtResource("1_wwsqp")
+
+[node name="bordes" parent="." unique_id=73059652 instance=ExtResource("1_x0u1t")]
+modulate = Color(0.70346844, 1.424499, 0.17217457, 1)
+
+[node name="Nivel" type="TileMapLayer" parent="." unique_id=1639555713]
+modulate = Color(0.76695764, 0.8129781, 0.12267172, 1)
+self_modulate = Color(0.52858925, 1.6737998, 0.95354146, 1)
+tile_map_data = PackedByteArray("AADz/wYAAAACAAAAAAD0/wYAAAACAAAAAAD1/wYAAAACAAAAAAD2/wYAAAACAAAAAAD3/wYAAAACAAAAAADz/wQAAAACAAAAAAD0/wQAAAACAAAAAAD1/wQAAAACAAAAAAD2/wQAAAACAAAAAAD3/wQAAAACAAAAAADz/wMAAAAAAAAAAAD4/wMAAAAAAAAAAAD4/wIAAAAAAAAAAAD4/wYAAAACAAAAAAD5/wYAAAACAAAAAAD4/wEAAAAAAAAAAAD7/wEAAAAAAAAAAAD7/wIAAAAAAAAAAAD7/wMAAAAAAAAAAAD6/wYAAAAAAAAAAADz//7/AAAAAAAAAAD0//7/AAAAAAAAAAD1//7/AAAAAAAAAAD2//7/AAAAAAAAAAD3//7/AAAAAAAAAADz/wIAAAAAAAEAAADz/wEAAAAAAAEAAADz/wAAAAAAAAEAAADz////AAAAAAEAAAD3/wEAAAAAAAAAAAD2/wEAAAAAAAAAAAD3/wMAAAABAAAAAAD2/wMAAAABAAAAAAD0/wMAAAABAAAAAAD1/wMAAAABAAAAAAD4/wAAAAABAAAAAAD7////AAAAAAAAAAD2//3/AAAAAAAAAAD2//z/AAAAAAAAAAD1//z/AAAAAAAAAAD0//z/AAAAAAAAAADz//z/AAAAAAAAAADz//3/AAAAAAAAAAD0//3/AAAAAAAAAAD1//3/AAAAAAAAAAD5//z/AAAAAAAAAAD5//v/AAAAAAAAAAD5//r/AAAAAAAAAAD5//n/AAAAAAAAAAD4//n/AAAAAAAAAAD6//z/AAAAAAAAAAD8//v/AAAAAAAAAAD8//r/AAAAAAAAAAD8//n/AAAAAAAAAAD7//n/AAAAAAAAAAD6//n/AAAAAAAAAAD6//r/AAAAAAAAAAD6//v/AAAAAAAAAAD7//v/AAAAAAAAAAD7//r/AAAAAAAAAAD8////AAAAAAAAAAD9////AAAAAAAAAAD5/wMAAAABAAAAAAD4/wQAAAACAAAAAAD5/wQAAAACAAAAAAD0////AAACAAAAAAD1////AAACAAAAAAD2////AAACAAAAAAD7//z/AAAAAAAAAAD8//z/AAAAAAAAAAAAAP//AAAAAAAAAAD/////AAAAAAAAAAABAP//AAAAAAAAAAACAP//AAAAAAAAAAACAP7/AAAAAAAAAAACAP3/AAAAAAAAAAACAPv/AAAAAAAAAAACAPz/AAAAAAAAAAD///v/AAAAAAAAAAD///r/AAAAAAAAAAD9//n/AAAAAAAAAAD+//n/AAAAAAAAAAD///n/AAAAAAAAAAD+//r/AAAAAAAAAAD9//r/AAAAAAAAAAD9//v/AAAAAAAAAAD+//v/AAAAAAAAAAADAPv/AAAAAAAAAAADAPz/AAAAAAAAAAADAP3/AAAAAAAAAAADAP7/AAAAAAAAAAADAP//AAAAAAAAAAAGAPn/AAAAAAAAAAAGAPr/AAAAAAAAAAAGAPv/AAAAAAAAAAAHAPv/AAAAAAAAAAAHAPr/AAAAAAAAAAAHAPn/AAAAAAAAAAAIAPn/AAAAAAAAAAAEAP//AAAAAAAAAAAGAP//AAACAAEAAAAIAP7/AAABAAAAAAAJAP7/AAAAAAAAAAAKAP7/AAAAAAAAAAAKAP3/AAAAAAAAAAAKAPz/AAABAAAAAAAMAAEAAAAAAAAAAAAJAAEAAAAAAAAAAAAJAAIAAAAAAAAAAAAIAAIAAAAAAAAAAAAHAAIAAAAAAAAAAAAGAAIAAAAAAAAAAAAGAAMAAAACAAAAAAAHAAMAAAACAAAAAAAIAAMAAAAAAAAAAADz//n/AAAAAAEAAAD0//n/AAACAAAAAAD1//n/AAACAAAAAAD2//n/AAACAAAAAAD3//n/AAACAAAAAAAAAPn/AAACAAAAAAABAPn/AAACAAAAAAACAPn/AAACAAAAAAD+/wcAAAACAAAAAAD//wcAAAACAAAAAAAAAAcAAAACAAAAAAABAAcAAAACAAAAAAACAAcAAAACAAAAAAAMAPn/AAAAAAAAAAAMAPr/AAABAAEAAAAIAAYAAAABAAAAAAALAAYAAAABAAAAAAAKAAYAAAABAAAAAAAJAAYAAAABAAAAAAAMAAIAAAAAAAAAAAALAPn/AAAAAAAAAAAKAPn/AAAAAAAAAAAJAPn/AAAAAAAAAAAFAPn/AAAAAAAAAAAAAP7/AAABAAAAAAABAP7/AAAAAAAAAAABAP3/AAAAAAAAAAAMAAAAAAAAAAAAAAADAAYAAAACAAEAAAAEAAYAAAACAAEAAAAHAAYAAAACAAEAAAAFAAMAAAACAAAAAAABAAMAAAACAAAAAAACAAMAAAACAAAAAAADAAMAAAACAAAAAAAEAAMAAAACAAAAAAAFAAIAAAAAAAAAAAAEAAIAAAACAAEAAAADAAIAAAAAAAAAAAACAAIAAAAAAAAAAAAAAAIAAAAAAAAAAAABAAIAAAAAAAAAAAAFAAYAAAAAAAAAAAAGAAYAAAAAAAAAAAAJAAMAAAAAAAAAAAD8/wYAAAAAAAEAAAAKAAAAAAABAAAAAAALAAAAAAABAAAAAAAJAAAAAAABAAAAAADz//r/AAAAAAEAAADz//v/AAAAAAEAAAACAAYAAAAAAAAAAAACAAUAAAAAAAAAAAAJAAQAAAACAAAAAAAKAAQAAAACAAAAAAD4//7/AAABAAAAAAD3//3/AAABAAAAAAD7/wYAAAAAAAAAAAD7/wUAAAAAAAAAAAD7/wQAAAAAAAAAAAADAPn/AAADAAAAAAAEAPn/AAADAAAAAAD6/wEAAAABAAAAAAAFAP//AAAAAAAAAAAHAP//AAAAAAAAAAAMAAYAAAABAAAAAAAAAAMAAAACAAAAAAD8/wAAAAAAAAEAAAD9/wAAAAACAAAAAAD4//r/AAACAAAAAAD+////AAACAAEAAAD+/wAAAAACAAAAAAAGAPz/AAAAAAAAAAAFAPz/AAABAAAAAAAGAAAAAAACAAAAAAAHAAAAAAACAAAAAAD7/wAAAAAAAAAAAAADAAUAAAABAAAAAAABAAYAAAAAAAAAAAD8/wEAAAAAAAEAAAD8/wIAAAAAAAEAAAD8/wMAAAAAAAEAAAD8/wQAAAAAAAEAAAD8/wUAAAAAAAEAAAD//wMAAAABAAEAAAD//wQAAAABAAEAAAD9/wYAAAABAAAAAAD//wIAAAAAAAAAAAA=")
+tile_set = ExtResource("2_t4go4")
+
+[node name="fondo" type="TileMapLayer" parent="." unique_id=1218722951]
+modulate = Color(2.3368087, 0.8270191, 1.3463867, 1)
+tile_map_data = PackedByteArray("AAD3//n/AAACAAMAAAD3//r/AAACAAMAAAD2//n/AAACAAMAAAD1//n/AAACAAMAAAD1//r/AAACAAMAAAD9//z/AAACAAMAAAD9//3/AAACAAMAAAD+//z/AAACAAMAAAAFAPr/AAACAAMAAAAIAPr/AAACAAMAAAAIAPv/AAACAAMAAAALAPr/AAACAAMAAAALAPv/AAACAAMAAAAKAPr/AAACAAMAAAAKAAEAAAACAAMAAAAEAAAAAAACAAMAAAD1////AAACAAMAAAD8/wEAAAACAAMAAAAAAAQAAAACAAMAAAAAAAUAAAACAAMAAAAGAAMAAAACAAMAAAAGAAQAAAACAAMAAAAEAAMAAAACAAMAAAAFAAMAAAACAAMAAAA=")
+tile_set = SubResource("TileSet_d14xj")
+
+[node name="contenedorMonedas" parent="." unique_id=305498419 instance=ExtResource("4_0gweo")]
+
+[node name="Moneda" parent="contenedorMonedas" unique_id=218364146 instance=ExtResource("5_wwsqp")]
+position = Vector2(-175, 38)
+
+[node name="Moneda2" parent="contenedorMonedas" unique_id=1214262341 instance=ExtResource("5_wwsqp")]
+position = Vector2(14, -68)
+
+[node name="Moneda3" parent="contenedorMonedas" unique_id=1675748477 instance=ExtResource("5_wwsqp")]
+position = Vector2(-184, -84)
+
+[node name="Moneda4" parent="contenedorMonedas" unique_id=473239327 instance=ExtResource("5_wwsqp")]
+position = Vector2(169, -79)
+
+[node name="Moneda5" parent="contenedorMonedas" unique_id=671932664 instance=ExtResource("5_wwsqp")]
+position = Vector2(20, 17)
+
+[node name="Moneda6" parent="contenedorMonedas" unique_id=428169819 instance=ExtResource("5_wwsqp")]
+position = Vector2(183, 55)
+
+[node name="Personaje" parent="." unique_id=1099182927 instance=ExtResource("6_aamar")]
+position = Vector2(-189, 83)
+
+[node name="Sonido muerte" type="AudioStreamPlayer2D" parent="Personaje" unique_id=48062971]
+stream = ExtResource("7_0gweo")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1025984336]
+position = Vector2(-1, -1)
+zoom = Vector2(2.4, 2.4)
+
+[node name="SalidaNivel" type="Area2D" parent="." unique_id=1894557773]
+script = ExtResource("7_t4go4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SalidaNivel" unique_id=1225187299]
+position = Vector2(175, 37)
+shape = SubResource("RectangleShape2D_cxo6d")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=676520132]
+stream = ExtResource("8_whgyc")
+autoplay = true
+
+[node name="EtiquetaMonedas" type="Label" parent="." unique_id=416898197]
+modulate = Color(1, 1, 0.15294118, 1)
+offset_left = -200.0
+offset_top = -136.0
+offset_right = -103.0
+offset_bottom = -113.0
+theme_override_font_sizes/font_size = 12
+text = "Monedas: 0"

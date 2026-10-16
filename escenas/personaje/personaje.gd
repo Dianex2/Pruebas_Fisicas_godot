@@ -1,10 +1,20 @@
 extends CharacterBody2D
-
+signal  personaje_muerto
 @export var animacion: AnimatedSprite2D
+@export  var area_2d: Area2D
 
 var _vel_mov: float = 100.0
 var _vel_jump: float = -300.0
+var _muerto: bool 
+
+
+func _ready() -> void:
+	add_to_group("personajes")
+	area_2d.body_entered.connect(_tocar_pinchos)
+	
 func _physics_process(delta: float) -> void:
+	if _muerto:
+		return 
 	
 	#asignamos  gravedad al personaje 
 	velocity += get_gravity() * delta
@@ -33,18 +43,19 @@ func _physics_process(delta: float) -> void:
 	else:
 		animacion.play("idle")
 	
-"""
-var manzanas: int = 3
-var costoManzanas: float = 10.6
-var nombreTienda: String = "Soriana"
-var estaAbierto: bool = false
+func _tocar_pinchos(_body: Node2D) -> void:
+	if _muerto:
+		return
 
-func _ready() -> void:
-	metodoPrueba()
+	_muerto = true
+	animacion.modulate = Color.RED
+	animacion.stop()
 	
-func metodoPrueba() -> void: 
-	print(manzanas)
-	print(costoManzanas)
-	print(nombreTienda)
-	print(estaAbierto)
-"""
+	reproducir_sonido_muerte()
+	
+	await get_tree().create_timer(0.5).timeout
+	get_tree().reload_current_scene()
+	
+func reproducir_sonido_muerte() -> void:
+	var audio = get_node_or_null("Sonido muerte")  
+	if audio and audio.stream !=null: audio.play()
